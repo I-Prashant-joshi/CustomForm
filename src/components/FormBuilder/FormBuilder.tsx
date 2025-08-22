@@ -114,10 +114,10 @@ export function FormBuilder({ form, onSave, onBack }: FormBuilderProps) {
             <button
               onClick={handleSave}
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
+            > 
               <Save className="w-5 h-5" />
-              Save Form
-            </button>
+              <span className='hidden sm:inline'> Save Form</span>
+            </button> 
           </div>
         </div>
       </div>
