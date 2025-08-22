@@ -94,7 +94,7 @@ export function FormBuilder({ form, onSave, onBack }: FormBuilderProps) {
             <div className="flex items-center gap-4">
               <button
                 onClick={onBack}
-                className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+                className="hidden sm:flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
               >
                 <ArrowLeft className="w-5 h-5" />
                 Back to Dashboard
@@ -105,7 +105,7 @@ export function FormBuilder({ form, onSave, onBack }: FormBuilderProps) {
                   type="text"
                   value={currentForm.title}
                   onChange={(e) => handleUpdateForm({ title: e.target.value })}
-                  className="text-xl font-bold text-gray-900 bg-transparent border-none focus:outline-none focus:ring-0 p-0"
+                  className="text-xl font-bold text-gray-900 bg-transparent border-none focus:outline-none focus:ring-0 p-0 "
                   placeholder="Form Title"
                 />
               </div>
