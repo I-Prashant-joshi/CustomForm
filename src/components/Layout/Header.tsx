@@ -16,8 +16,8 @@ export function Header({ activeTab, onTabChange }: HeaderProps) {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-8">
+        <div className="flex items-center justify-between h-16 ">
+          <div className="flex items-center gap-8 w-full justify-between sm:justify-start">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <FileText className="w-5 h-5 text-white" />
@@ -37,7 +37,7 @@ export function Header({ activeTab, onTabChange }: HeaderProps) {
                   }`}
                 >
                   <Icon className="w-4 h-4" />
-                  {label}
+                  <span className='hidden sm:inline'>{label}</span>
                 </button>
               ))}
             </nav>
